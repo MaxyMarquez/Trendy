@@ -1,21 +1,19 @@
-import { useState } from 'react'
-import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:3002/api'
-import './App.css'
-import Home from './components/Home/Home'
-import { Route, Routes } from 'react-router'
+import React from 'react';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home';
 
 function App() {
-
   return (
-    <>
-      <a href="/home">HOME</a>
+    <Router>
+      <nav>
+        <Link to="/home">HOME</Link>
+      </nav>
 
       <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
