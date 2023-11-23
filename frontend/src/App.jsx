@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <a href="/home">Home</a>
+      <a href="https://trendy-4f2i.vercel.app/home">Homeeee</a>
     </>
   )
 }
