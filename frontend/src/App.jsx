@@ -4,17 +4,15 @@ import Home from './components/Home/Home';
 
 function App() {
 
-  const path = window.location.pathname;
-
-  if (path === '/home') {
-    return <Home />;
-  }
-
   return (
     <>
       <nav>
         <Link to="/home">HOME</Link>
       </nav>
+
+      <Routes>
+        <Route path='/home' element={<Home />} />
+      </Routes>
     </>
   );
 }
