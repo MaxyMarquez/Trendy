@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <nav>
-        <a href="/home">HOME</a>
+        <Link to="/home">HOME</Link>
       </nav>
     </>
   );
