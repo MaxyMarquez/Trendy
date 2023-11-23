@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Home />
+      <a href="/home">Home</a>
     </>
   )
 }

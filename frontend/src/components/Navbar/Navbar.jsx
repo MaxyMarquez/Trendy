@@ -12,7 +12,6 @@ const Navbar = () => {
     return (
         <>
             <a href="/home">Home</a>
-
         </>
     )
 }
